@@ -1,0 +1,50 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.container {
+    display: flex;
+    background-color: bisque;
+    width: 26%;
+    flex-wrap: wrap;
+    margin-left: 40%;
+    margin-top: 4%;
+    
+}
+.num {
+    color:black;
+    font-size: 50px;
+    background: rgb(241, 238, 234);
+    padding: 20px;
+    margin: 5px;
+    justify-content: space-around;
+
+}
+
+.num:hover{
+    color: white;
+    cursor: pointer;
+
+}
+#ac{
+    flex-grow: 2;
+}
+ , #del , #divide {
+    flex-grow: 1;
+    text-align: center;
+}
+#btn1 , #btn2 , #btn3 , #btn4 , #btn5 , #btn6 , #minus, #multi ,#btn7 , #btn8 , #btn9 , #plus{
+    display: flex;
+
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+#btn0 , #dot , #result{
+    flex-grow: 1;
+    text-align: center;
+}
+
+
