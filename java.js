@@ -7,13 +7,14 @@ var btn6 = document.querySelector("btn6");
 var btn7 = document.querySelector("btn7");
 var btn8 = document.querySelector("btn8");
 var btn9 = document.querySelector("btn9");
-var btn0 = document.querySelector("btn0");
+var btn0 = document.getElementById("btn0");
 var x;
 var y;
 var quant;
 
 btn0.addEventListener("click", myfunc())
  
-function myfunc{
+
+function myfunc() {  
     alert("heyy");
 }
