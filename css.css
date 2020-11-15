@@ -46,7 +46,7 @@
 }
 
 .num:hover{
-    color: aqua;
+    color: #fff;
     cursor: pointer;
     background: linear-gradient(#222 , #333 , #222);
 }
