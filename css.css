@@ -1,50 +1,61 @@
 *{
+    box-sizing: border-box;
     padding: 0%;
     margin: 0%;
 }
-
-.container {
+.calculator-container{
+    position: relative;
     display: flex;
-    background-color: bisque;
-    width: 26%;
-    flex-wrap: wrap;
-    margin-left: 40%;
-    margin-top: 4%;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(#777, #eee);
+    padding: 80px;
+}
+.calculator{
+    background-color: #555;
+    height: fit-content;
+    width: fit-content;
+    border: #555 solid 10px;
+    border-radius: 10px;
+}
+#output{
+    height: 100px;
+    background-color: #004000;
+    width: 100%;
+    padding: 20px;
+    color: #999;
+    text-align: right;
+    position: relative;
+    border-radius: 10px;
+}
+.controls-container {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    width: fit-content;
+    text-align: center;
+    margin:20px 0 ;
     
 }
 .num {
-    color:black;
-    font-size: 50px;
-    background: rgb(241, 238, 234);
+    color:#ccc;
+    font-size: 15px;
+    background: linear-gradient(#333 , #444 , #333);
     padding: 20px;
     margin: 5px;
-    justify-content: space-around;
-
+    border-radius: 10px;
 }
 
 .num:hover{
-    color: white;
+    color: aqua;
     cursor: pointer;
-
+    background: linear-gradient(#222 , #333 , #222);
 }
 #ac{
-    flex-grow: 2;
+    grid-column: span 2;
 }
- , #del , #divide {
-    flex-grow: 1;
-    text-align: center;
-}
-#btn1 , #btn2 , #btn3 , #btn4 , #btn5 , #btn6 , #minus, #multi ,#btn7 , #btn8 , #btn9 , #plus{
+#plus{
+    grid-row: span 2;
     display: flex;
-
-    flex-grow: 1;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
-
-
-#btn0 , #dot , #result{
-    flex-grow: 1;
-    text-align: center;
-}
-
-
