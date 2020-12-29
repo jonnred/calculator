@@ -1,48 +1,15 @@
 /****** number 1 to 10 **********/
-var givenA = 0 ;
-var givenB = 0;
-const output = document.querySelector('#output');
-
-const digits = document.querySelectorAll(".digit");
-for (let index = 0; index < digits.length; index++) {
-    const element = digits[index];
-    element.addEventListener("click" , (e) => {
-    toString(e.target.innerText);
-    if (givenA == '0') {    
-        givenA += e.target.innerText;
-        output.innerText = givenA;
-    }
-    else{
-        givenB += e.target.innerText;
-        output.innerText = givenB;
-    
+    let firstNumber = ""; 
+    let secondNumber = "";
+    const numbers = document.querySelectorAll(".digit");
+    for (let index = 0; index < numbers.length; index++) {
+        const element = numbers[index];
+        element.addEventListener("click" , (e) => {
+         firstNumber = firstNumber.concat(e.target.innerText);
+         console.log(firstNumber);
+    })        
     }
     
-    
-    const plus = document.querySelector('#plus');
-    plus.addEventListener('click' , (e) =>{
-        output.innerText = '';
-        toString(e.target.innerText);
-        givenB += e.target.innerText;
-        console.log(e.target.innerText);
-        answer = givenA + givenB;  
-    });
-    const equals = document.querySelector("#result");
-    equals.addEventListener("click" , () => {
-
-    })
-});}
-
-const givenAFunction = (e)=>{
-    
-};
-const calculate = ()=>{
-
-};
-const update = ()=>{
-    
-
-};
 /* 
 1.click number
     1-a . convert into a string 

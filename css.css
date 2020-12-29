@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0%;
     margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .calculator-container{
     position: relative;
@@ -18,15 +19,28 @@
     border: #555 solid 10px;
     border-radius: 10px;
 }
-#output{
+.output{
     height: 100px;
     background-color: #004000;
-    width: 100%;
+    max-width: 315px;
     padding: 20px;
     color: #999;
     text-align: right;
     position: relative;
     border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.first-output{
+    font-size: 14px;
+    position: relative;
+}
+.second-output {
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
 }
 .controls-container {
     display: grid;
